@@ -1,5 +1,5 @@
-baseurl = "https://dev.parra-alvarez.de/"
-title = "Gonzalo Parra Alvarez"
+baseURL = "http://www.example.com"
+title = "johndoe"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -12,16 +12,12 @@ enableEmoji = true
 # disqusShortname = "yourdiscussshortname"
 
 [params]
-author = "Gonzalo Parra Alvarez"
+author = "John Doe"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Gonzalo Parra Alvarez's website"
-keywords = "blog,developer,personal,engineer"
-info = ["Engineering Manager", "System Integrator"]
-avatarurl = "images/avatar-diemaus-sw-closeup.jpeg"
-
-
-#avatarurl = "images/avatar-funny.jpg"
-
+description = "John Doe's personal website"
+keywords = "blog,developer,personal"
+info = ["Full Stack DevOps", "Magician"]
+avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2019
@@ -40,11 +36,11 @@ hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
 # Custom CSS
-# customCSS = []
+customCSS = []
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
-# customSCSS = []
+customSCSS = []
 # Custom JS
-# customJS = []
+customJS = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
@@ -73,6 +69,10 @@ maxSeeAlsoItems = 5
 # [params.googleTagManager]
 # id = "gid"
 
+# If you want to use Application Insights(https://azure.com/) for analytics, add this section
+# [params.applicationInsights]
+# connectionString = "connectionString"
+
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
 childsrc = ["'self'"]
@@ -88,8 +88,8 @@ stylesrc = [
   "https://cdn.jsdelivr.net/"
 ]
 scriptsrc = [
-  "'self'", 
-  "'unsafe-inline'", 
+  "'self'",
+  "'unsafe-inline'",
   "https://www.google-analytics.com",
   "https://cdn.jsdelivr.net/"
 ]
@@ -107,91 +107,89 @@ author = "authors"
 name = "Github"
 icon = "fa fa-2x fa-github"
 weight = 1
-url = "https://github.com/nzalo/"
+url = "https://github.com/johndoe/"
 
+[[params.social]]
+name = "Gitlab"
+icon = "fa fa-2x fa-gitlab"
+weight = 2
+url = "https://gitlab.com/johndoe/"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-2x fa-twitter"
+weight = 3
+url = "https://twitter.com/johndoe/"
 
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
 weight = 4
-url = "https://www.linkedin.com/in/parraalvarez/"
+url = "https://www.linkedin.com/in/johndoe/"
 
 [[params.social]]
-name = "Email"
-icon = "fa fa-2x fa-email-bulk"
+name = "Medium"
+icon = "fa fa-2x fa-medium"
+weight = 5
+url = "https://medium.com/@johndoe"
+
+[[params.social]]
+name = "RSS"
+icon = "fa fa-2x fa-rss"
 weight = 6
-url = "mailto:gonzalo.pa@mailbox.org"
+url = "https://myhugosite.com/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
-
-# [[params.social]]
-# name = "Medium"
-# icon = "fa fa-2x fa-medium"
-# weight = 5
-# url = "https://medium.com/@johndoe"
-
-# [[params.social]]
-# name = "RSS"
-# icon = "fa fa-2x fa-rss"
-# weight = 6
-# url = "https://myhugosite.com/index.xml"
-# rel = "alternate"
-# type = "application/rss+xml"
 
 [languages.en]
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-name = "Resume"
+name = "About"
 weight = 1
-url = "resume/"
+url = "about/"
 
-# [[languages.en.menu.main]]
-# name = "Blog"
-# weight = 2
-# url = "posts/"
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 2
+url = "posts/"
 
 [[languages.en.menu.main]]
 name = "Projects"
 weight = 3
 url = "projects/"
 
-#[[languages.en.menu.main]]
-#name = "Tech-Radar"
-#weight = 4
-#url = 
+[[languages.en.menu.main]]
+name = "Contact me"
+weight = 5
+url = "contact/"
 
-#[[languages.en.menu.main]]
-#name = "Contact me"
-#weight = 5
-#url = "contact/"
+[languages.pt-br]
+languageName = ":brazil:"
+title = "João Ninguém"
 
-#[languages.pt-de]
-#languageName = ":de:"
-#title = "Gonzalo Parra-Alvarez"
+[languages.pt-br.params]
+author = "João Ninguém"
+info = "Full Stack DevOps e Mágico"
+description = "Sítio pessoal de João Ninguém"
+keywords = "blog,desenvolvedor,pessoal"
 
-#[languages.pt-de.params]
-#author = "Gonzalo Parra-Alvarez"
-#description = "Gonzalo Parra-Alvarez's website"
-#info = ["Technische Leitung", "Systemintegrator"]
+[[languages.pt-br.menu.main]]
+name = "Sobre"
+weight = 1
+url = "about/"
 
+[[languages.pt-br.menu.main]]
+name = "Blog"
+weight = 2
+url = "posts/"
 
-#[[languages.pt-de.menu.main]]
-#name = "Lebenslauf"
-#weight = 1
-#url = "resume/"
+[[languages.pt-br.menu.main]]
+name = "Projetos"
+weight = 3
+url = "projects/"
 
-#[[languages.pt-de.menu.main]]
-#name = "Projekte"
-#weight = 3
-#url = "projects/"
-
-#[[languages.pt-de.menu.main]]
-#name = "Tech-Radar"
-#weight = 4
-#url = 
-
-#[[languages.pt-de.menu.main]]
-#name = "Kontakt"
-#weight = 5
-#url = "contact/"
+[[languages.pt-br.menu.main]]
+name = "Contato"
+weight = 5
+url = "contact/"
