@@ -13,8 +13,8 @@ In development.
 #### Used Technologies: 
 
 * [python](https://www.python.org/) for the scripts
-* [selenium](https://www.selenium.dev/) as the core library to control the browser
-* [helium](https://github.com/mherrmann/selenium-python-helium) as an abstraction layer to interact with selenium
+* [selenium](https://www.selenium.dev/) and [webdriver](https://www.selenium.dev/documentation/webdriver/) as the interface to control the browser using python.
+* [helium for selenium](https://github.com/mherrmann/selenium-python-helium) as an abstraction layer to interact with selenium
 * [bolt for python](https://api.slack.com/start/building/bolt-python) as the framework for the slack bot usind websocket
 * [slack API](https://api.slack.com/)
 
